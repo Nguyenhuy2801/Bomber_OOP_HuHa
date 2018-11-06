@@ -108,20 +108,18 @@ public class Bomber extends Actor{
 		super.changeOrient(orient, i);
 		switch (orient) {
 		case LEFT:
-            img = new ImageIcon(getClass().getResource("/Images/player_left.png")).getImage();
-            break;
-//            int a = i % 3;
-//            switch (a){
-//                case 0:
-//                    img = new ImageIcon(getClass().getResource("/Images/player_left.png")).getImage();
-//                    break;
-//                case 1:
-//                    img = new ImageIcon(getClass().getResource("/Images/player_left_1.png")).getImage();
-//                    break;
-//                case 2:
-//                    img = new ImageIcon(getClass().getResource("/Images/player_left_2.png")).getImage();
-//                    break;
-//            }
+            int a = i % 3;
+            switch (a){
+                case 0:
+                    img = new ImageIcon(getClass().getResource("/Images/player_left.png")).getImage();
+                    break;
+                case 1:
+                    img = new ImageIcon(getClass().getResource("/Images/player_left_1.png")).getImage();
+                    break;
+                case 2:
+                    img = new ImageIcon(getClass().getResource("/Images/player_left_2.png")).getImage();
+                    break;
+            }
 		case RIGHT:
             int b = i % 3;
             switch (b){
