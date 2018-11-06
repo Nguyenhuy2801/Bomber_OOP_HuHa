@@ -1,22 +1,26 @@
 package Bomber_OOP.actor;
 
-public class HightScore {
-	private String name;
-	private int score;
-	
-	public HightScore(String name, int score) {
-		super();
-		this.name = name;
-		this.score = score;
-	}
+public class HightScore
+{
+    private String name;
+    private int score;
 
-	public String getName() {
-		return name;
-	}
+    public HightScore(String name, int score)
+    {
+        super();
+        this.name = name;
+        this.score = score;
+    }
 
-	public int getScore() {
-		return score;
-	}
+    public String getName()
+    {
+        return name;
+    }
+
+    public int getScore()
+    {
+        return score;
+    }
 
 
 }
