@@ -1,4 +1,4 @@
-package com.bhuy.bomb.actor;
+package Bomber_OOP.actor;
 
 import java.awt.Graphics2D;
 import java.awt.Image;

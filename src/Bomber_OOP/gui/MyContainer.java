@@ -1,4 +1,4 @@
-package com.bhuy.bomb.gui;
+package Bomber_OOP.gui;
 
 import java.awt.CardLayout;
 import java.awt.Color;

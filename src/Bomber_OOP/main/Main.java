@@ -1,14 +1,14 @@
-package com.bhuy.bomb.main;
+package Bomber_OOP.main;
 
-import com.bhuy.bomb.gui.GUI;
+import Bomber_OOP.gui.GUI;
 
 
 public class Main {
 	public static void main(String[] args) {
 		new GUI().setVisible(true);
 
-		/*
-		 * dcm huy
-		 */
+
+
+
 	}
 }

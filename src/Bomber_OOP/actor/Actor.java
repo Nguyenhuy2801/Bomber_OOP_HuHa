@@ -1,13 +1,10 @@
-package com.bhuy.bomb.actor;
+package Bomber_OOP.actor;
 
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.Rectangle;
 import java.util.ArrayList;
 
-import javax.swing.ImageIcon;
-
-import com.bhuy.bomb.gui.GUI;
+import Bomber_OOP.gui.GUI;
 
 public class Actor {
 	public static final int LEFT = 1;
@@ -22,7 +19,7 @@ public class Actor {
 	public static final int BOMB = 4;
 	
 	
-	protected int x,y,type,orient, speed, width, height, runBomb;
+	protected int x,y,type,orient, speed, width, height, runBomb, i = 0;
 	protected Image img;
 	
 	
@@ -159,8 +156,9 @@ public class Actor {
 		return true;
 	}
 
-	public void changeOrient(int orient){
+	public void changeOrient(int orient, int i){
 		this.orient = orient;
+		this.i = i;
 	}
 
 	public int getX() {

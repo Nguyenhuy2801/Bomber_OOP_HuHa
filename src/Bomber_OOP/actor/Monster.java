@@ -1,7 +1,6 @@
-package com.bhuy.bomb.actor;
+package Bomber_OOP.actor;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Image;
 
@@ -50,8 +49,8 @@ public class Monster extends Actor{
 	}
 	
 	@Override
-	public void changeOrient(int orient) {
-		super.changeOrient(orient);
+	public void changeOrient(int orient, int i) {
+		super.changeOrient(orient, i);
 		if(type==Actor.MONSTER){
 			switch (orient) {
 			case LEFT:

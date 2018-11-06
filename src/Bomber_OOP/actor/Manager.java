@@ -1,27 +1,21 @@
-package com.bhuy.bomb.actor;
+package Bomber_OOP.actor;
 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.RenderingHints;
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 import sound.GameSound;
 
@@ -461,7 +455,7 @@ public class Manager {
 	public void setNewBomb() {
 		switch (round) {
 		case 1:
-			mBomber.setNew(0, 0);
+			mBomber.setNew(0, 540);
 			break;
 		case 2:
 			mBomber.setNew(315, 270);
@@ -478,7 +472,7 @@ public class Manager {
 	public void changeOrientAll() {
 		for (int i = 0; i < arrMonster.size(); i++) {
 			int orient = random.nextInt(4) + 1;
-			arrMonster.get(i).changeOrient(orient);
+			arrMonster.get(i).changeOrient(orient, 0);
 		}
 	}
 
@@ -486,7 +480,7 @@ public class Manager {
 		for (int i = 0; i < arrMonster.size(); i++) {
 			if (arrMonster.get(i).move(count, arrBomb, arrBox) == false) {
 				int orient = random.nextInt(4) + 1;
-				arrMonster.get(i).changeOrient(orient);
+				arrMonster.get(i).changeOrient(orient, 0);
 			}
 		}
 	}

@@ -1,7 +1,5 @@
-package com.bhuy.bomb.actor;
+package Bomber_OOP.actor;
 
-import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.Rectangle;
 
 import javax.swing.ImageIcon;
@@ -21,7 +19,7 @@ public class Bomb extends Actor{
 		this.size=size;
 		this.orient=0;
 		this.timeline = timeline;
-		this.type =Actor.BOMB;
+		this.type = BOMB;
 		img= new ImageIcon(getClass().getResource("/Images/bomb.png")).getImage();
 		this.width= img.getWidth(null);
 		this.height= img.getHeight(null);
@@ -36,7 +34,7 @@ public class Bomb extends Actor{
 		this.speed = 5;
 		this.size=size;
 		this.timeline = timeline;
-		this.type =Actor.BOMB;
+		this.type = BOMB;
 		img= new ImageIcon(getClass().getResource("/Images/bomb.png")).getImage();
 		this.width = img.getWidth(null);
 		this.height = img.getHeight(null);
@@ -79,7 +77,7 @@ public class Bomb extends Actor{
 		Rectangle rec2 = new Rectangle(x, y, 45, 45);
 		Rectangle rec3 = new Rectangle(actor.getX(), actor.getY(), actor.getWidth(), actor.getHeight());
 		if(rec2.intersects(rec3)){
-			if(actor.getType()==Bomber.BOSS){
+			if(actor.getType()== BOSS){
 				return 2;
 			}
 			return 1;

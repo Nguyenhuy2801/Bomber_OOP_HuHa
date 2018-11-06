@@ -1,4 +1,4 @@
-package com.bhuy.bomb.gui;
+package Bomber_OOP.gui;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -13,12 +13,10 @@ import java.util.ArrayList;
 import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 import java.util.*;
 
-import com.bhuy.bomb.actor.HightScore;
+import Bomber_OOP.actor.HightScore;
 
 
 public class HightScorePanel extends JPanel implements ActionListener{

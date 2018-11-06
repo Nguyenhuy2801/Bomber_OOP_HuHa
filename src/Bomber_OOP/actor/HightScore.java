@@ -1,4 +1,4 @@
-package com.bhuy.bomb.actor;
+package Bomber_OOP.actor;
 
 public class HightScore {
 	private String name;

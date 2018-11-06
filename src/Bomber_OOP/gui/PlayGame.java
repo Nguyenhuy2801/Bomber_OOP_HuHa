@@ -1,10 +1,8 @@
-package com.bhuy.bomb.gui;
+package Bomber_OOP.gui;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,17 +10,11 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.BitSet;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import sound.GameSound;
-
-import com.bhuy.bomb.actor.Actor;
-import com.bhuy.bomb.actor.Bomber;
-import com.bhuy.bomb.actor.Manager;
+import Bomber_OOP.actor.Bomber;
+import Bomber_OOP.actor.Manager;
 
 
 public class PlayGame extends JPanel implements Runnable,ActionListener{
@@ -37,6 +29,7 @@ public class PlayGame extends JPanel implements Runnable,ActionListener{
 	private int timeLose=0;
 	private int timeNext=0;
 	private JButton btn_Menu;
+	private int i = 0;
 	
 	public PlayGame(MyContainer mContainer) {
 		this.mContainer = mContainer;
@@ -103,23 +96,24 @@ public class PlayGame extends JPanel implements Runnable,ActionListener{
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			
+
 			if(traceKey.get(KeyEvent.VK_LEFT)){
-				mMagager.getmBomber().changeOrient(Bomber.LEFT);
+				mMagager.getmBomber().changeOrient(Bomber.LEFT, i);
 				mMagager.getmBomber().move(count,mMagager.getArrBomb(),mMagager.getArrBox());
 				
 			}
 			if(traceKey.get(KeyEvent.VK_RIGHT)){
-				mMagager.getmBomber().changeOrient(Bomber.RIGHT);
+				mMagager.getmBomber().changeOrient(Bomber.RIGHT, i);
 				mMagager.getmBomber().move(count,mMagager.getArrBomb(),mMagager.getArrBox());
 			}
 			if(traceKey.get(KeyEvent.VK_UP)){
-				mMagager.getmBomber().changeOrient(Bomber.UP);
+				mMagager.getmBomber().changeOrient(Bomber.UP, i);
 				mMagager.getmBomber().move(count,mMagager.getArrBomb(),mMagager.getArrBox());;
 			}
 			if(traceKey.get(KeyEvent.VK_DOWN)){
-				mMagager.getmBomber().changeOrient(Bomber.DOWN);
+				mMagager.getmBomber().changeOrient(Bomber.DOWN, i);
 				mMagager.getmBomber().move(count,mMagager.getArrBomb(),mMagager.getArrBox());
+				i++;
 			}
 			if(traceKey.get(KeyEvent.VK_SPACE)){
 					mMagager.innitBomb();
