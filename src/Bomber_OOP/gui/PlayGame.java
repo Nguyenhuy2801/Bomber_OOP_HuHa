@@ -110,17 +110,19 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
             {
                 mMagager.getmBomber().changeOrient(Bomber.LEFT, i);
                 mMagager.getmBomber().move(count, mMagager.getArrBomb(), mMagager.getArrBox());
-
+                i++;
             }
             if (traceKey.get(KeyEvent.VK_RIGHT))
             {
                 mMagager.getmBomber().changeOrient(Bomber.RIGHT, i);
                 mMagager.getmBomber().move(count, mMagager.getArrBomb(), mMagager.getArrBox());
+                i++;
             }
             if (traceKey.get(KeyEvent.VK_UP))
             {
                 mMagager.getmBomber().changeOrient(Bomber.UP, i);
                 mMagager.getmBomber().move(count, mMagager.getArrBomb(), mMagager.getArrBox());
+                i++;
                 ;
             }
             if (traceKey.get(KeyEvent.VK_DOWN))

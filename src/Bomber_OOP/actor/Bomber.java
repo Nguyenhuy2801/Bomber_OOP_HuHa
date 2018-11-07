@@ -25,7 +25,7 @@ public class Bomber extends Actor
         this.heart = 3;
         this.score = 0;
         this.status = ALIVE;
-        this.img = new ImageIcon(getClass().getResource("/Images/player_down.png")).getImage();
+        this.img = new ImageIcon(getClass().getResource("/Images/player_down_0.png")).getImage();
         width = img.getWidth(null);
         height = img.getHeight(null) - 20;
     }
@@ -35,7 +35,7 @@ public class Bomber extends Actor
         this.x = x;
         this.y = y;
         this.status = ALIVE;
-        this.img = new ImageIcon(getClass().getResource("/Images/player_down.png")).getImage();
+        this.img = new ImageIcon(getClass().getResource("/Images/player_down_0.png")).getImage();
     }
 
     public int getScore()
@@ -127,61 +127,24 @@ public class Bomber extends Actor
         switch (orient)
         {
             case LEFT:
-                int a = i % 3;
-                switch (a)
-                {
-                    case 0:
-                        img = new ImageIcon(getClass().getResource("/Images/player_left.png")).getImage();
-                        break;
-                    case 1:
-                        img = new ImageIcon(getClass().getResource("/Images/player_left_1.png")).getImage();
-                        break;
-                    case 2:
-                        img = new ImageIcon(getClass().getResource("/Images/player_left_2.png")).getImage();
-                        break;
-                }
+
+                img = new ImageIcon(getClass().getResource("/Images/player_left_" + ((i/50)%3) + ".png")).getImage();
+                break;
+
             case RIGHT:
-                int b = i % 3;
-                switch (b)
-                {
-                    case 0:
-                        img = new ImageIcon(getClass().getResource("/Images/player_right.png")).getImage();
-                        break;
-                    case 1:
-                        img = new ImageIcon(getClass().getResource("/Images/player_right_1.png")).getImage();
-                        break;
-                    case 2:
-                        img = new ImageIcon(getClass().getResource("/Images/player_right_2.png")).getImage();
-                        break;
-                }
+
+
+                img = new ImageIcon(getClass().getResource("/Images/player_right_" + ((i/50)%3) + ".png")).getImage();
+                break;
+
             case UP:
-                int c = i % 3;
-                switch (c)
-                {
-                    case 0:
-                        img = new ImageIcon(getClass().getResource("/Images/player_up.png")).getImage();
-                        break;
-                    case 1:
-                        img = new ImageIcon(getClass().getResource("/Images/player_up_1.png")).getImage();
-                        break;
-                    case 2:
-                        img = new ImageIcon(getClass().getResource("/Images/player_up_2.png")).getImage();
-                        break;
-                }
+
+                img = new ImageIcon(getClass().getResource("/Images/player_up_" + ((i/50)%3) + ".png")).getImage();
+                break;
+
             case DOWN:
-                int d = i % 3;
-                switch (d)
-                {
-                    case 0:
-                        img = new ImageIcon(getClass().getResource("/Images/player_down.png")).getImage();
-                        break;
-                    case 1:
-                        img = new ImageIcon(getClass().getResource("/Images/player_down_1.png")).getImage();
-                        break;
-                    case 2:
-                        img = new ImageIcon(getClass().getResource("/Images/player_down_2.png")).getImage();
-                        break;
-                }
+                img = new ImageIcon(getClass().getResource("/Images/player_down_" + ((i/50)%3) + ".png")).getImage();
+                break;
 
             default:
                 break;
