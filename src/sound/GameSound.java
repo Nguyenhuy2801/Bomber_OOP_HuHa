@@ -11,7 +11,7 @@ public class GameSound
     public static final String BOMB = "newbomb.wav";
     public static final String BOMBER_DIE = "bomber_die.wav";
     public static final String MONSTER_DIE = "monster_die.wav";
-    public static final String BONG_BANG = "bomb_bang.wav";
+    public static final String BOMB_BANG = "bomb_bang.wav";
     public static final String ITEM = "item.wav";
     public static final String WIN = "win.wav";
     public static final String LOSE = "lose.mid";
@@ -42,7 +42,7 @@ public class GameSound
         putAudio(BOMB);
         putAudio(MONSTER_DIE);
         putAudio(BOMBER_DIE);
-        putAudio(BONG_BANG);
+        putAudio(BOMB_BANG);
         putAudio(ITEM);
         putAudio(WIN);
         putAudio(LOSE);
@@ -54,7 +54,7 @@ public class GameSound
         ;
         getAudio(PLAYGAME).stop();
         getAudio(BOMB).stop();
-        getAudio(BONG_BANG).stop();
+        getAudio(BOMB_BANG).stop();
         getAudio(WIN).stop();
         getAudio(LOSE).stop();
     }

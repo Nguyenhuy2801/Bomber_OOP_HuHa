@@ -446,7 +446,7 @@ public class Manager
             if (arrBomb.get(i).getTimeline() == 250)
             {
                 BombBang bomBang = new BombBang(arrBomb.get(i).getX(), arrBomb.get(i).getY(), arrBomb.get(i).getSize(), arrBox);
-                GameSound.getIstance().getAudio(GameSound.BONG_BANG).play();
+                GameSound.getIstance().getAudio(GameSound.BOMB_BANG).play();
                 arrBombBang.add(bomBang);
                 arrBomb.remove(i);
             }
@@ -458,7 +458,7 @@ public class Manager
                 if (arrBomb.get(i).isImpactBombvsActor(arrMonster.get(j)) == 2)
                 {
                     BombBang bomBang = new BombBang(arrBomb.get(i).getX(), arrBomb.get(i).getY(), arrBomb.get(i).getSize(), arrBox);
-                    GameSound.getIstance().getAudio(GameSound.BONG_BANG).play();
+                    GameSound.getIstance().getAudio(GameSound.BOMB_BANG).play();
                     arrBombBang.add(bomBang);
                     arrBomb.remove(i);
                 }
