@@ -19,7 +19,7 @@ public class Actor
     public static final int BOMB = 4;
 
 
-    protected int x, y, type, orient, speed, width, height, runBomb, i = 0;
+    protected int x, y, type, orient, speed, width, height, runBomb;
     protected Image img;
 
 
@@ -200,7 +200,7 @@ public class Actor
     public void changeOrient(int orient, int i)
     {
         this.orient = orient;
-        this.i = i;
+//        this.i = i;
     }
 
     public int getX()
