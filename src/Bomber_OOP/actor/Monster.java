@@ -65,7 +65,7 @@ public class Monster extends Actor
             switch (orient)
             {
                 case LEFT:
-                    img = new ImageIcon(getClass().getResource("/Images/monster_left.png")).getImage();
+                    img = new ImageIcon(getClass().getResource("/Images/balloom_left.png")).getImage();
                     break;
                 case RIGHT:
                     img = new ImageIcon(getClass().getResource("/Images/monster_right.png")).getImage();
@@ -74,7 +74,7 @@ public class Monster extends Actor
                     img = new ImageIcon(getClass().getResource("/Images/monster_up.png")).getImage();
                     break;
                 case DOWN:
-                    img = new ImageIcon(getClass().getResource("/Images/monster_down.png")).getImage();
+                    img = new ImageIcon(getClass().getResource("/Images/balloom_dead.png")).getImage();
                     break;
                 default:
                     break;
