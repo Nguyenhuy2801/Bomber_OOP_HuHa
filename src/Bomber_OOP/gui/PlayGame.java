@@ -178,7 +178,7 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
             if (mMagager.getmBomber().getStatus() == Bomber.DEAD)
             {
                 timeDead++;
-                if (timeDead == 3000)
+                if (timeDead == 2500)
                 {
                     mMagager.setNewBomb();
                     timeDead = 0;

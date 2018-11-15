@@ -127,25 +127,17 @@ public class Bomber extends Actor
         switch (orient)
         {
             case LEFT:
-
                 img = new ImageIcon(getClass().getResource("/Images/player_left_" + ((i/50)%3) + ".png")).getImage();
                 break;
-
             case RIGHT:
-
-
                 img = new ImageIcon(getClass().getResource("/Images/player_right_" + ((i/50)%3) + ".png")).getImage();
                 break;
-
             case UP:
-
                 img = new ImageIcon(getClass().getResource("/Images/player_up_" + ((i/50)%3) + ".png")).getImage();
                 break;
-
             case DOWN:
                 img = new ImageIcon(getClass().getResource("/Images/player_down_" + ((i/50)%3) + ".png")).getImage();
                 break;
-
             default:
                 break;
         }

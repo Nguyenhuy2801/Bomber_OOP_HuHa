@@ -396,8 +396,13 @@ public class Manager
         {
             if (mBomber.isImpactBomberVsActor(arrMonster.get(i)))
             {
-                Image icon = new ImageIcon(getClass().getResource("/Images/ghost.png")).getImage();
-                mBomber.setImg(icon);
+                Image icon;
+                for (int j = 0; j < 3000; j++)
+                {
+                    icon = new ImageIcon(getClass().getResource("/Images/player_dead" + (j/1000%3) + ".png")).getImage();
+                    mBomber.setImg(icon);
+                }
+
                 if (mBomber.getStatus() == Bomber.DEAD)
                 {
                     return;
