@@ -56,7 +56,7 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
     private void innitCompts()
     {
         btn_Menu = new JButton();
-        btn_Menu.setText("Menu");
+        btn_Menu.setText("Exit");
         btn_Menu.setBounds(750, 520, 100, 30);
         btn_Menu.addActionListener(this);
         add(btn_Menu);

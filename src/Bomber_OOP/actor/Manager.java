@@ -22,7 +22,7 @@ public class Manager
     private ArrayList<Item> arrItem;
     private ArrayList<HightScore> arrHightScore;
     private String Background;
-    private int round = 1;
+    private int level = 1;
     private int nextRound = 0;
     private int status = 0;
 
@@ -33,7 +33,7 @@ public class Manager
 
     public void innitManager()
     {
-        switch (round)
+        switch (level)
         {
             case 1:
                 mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
@@ -252,7 +252,7 @@ public class Manager
         {
             if (type == 2)
             {
-                g2d.drawString("Round " + round, 200, 250);
+                g2d.drawString("Level " + level, 200, 250);
             }
             else
             {
@@ -350,7 +350,7 @@ public class Manager
     {
         if (mBomber.getHeart() == 0 && nextRound == 0)
         {
-            round = 1;
+            level = 1;
             status = 1;
             nextRound++;
             GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
@@ -359,17 +359,17 @@ public class Manager
         }
         if (arrMonster.size() == 0 && nextRound == 0)
         {
-            if (round == 3)
+            if (level == 3)
             {
                 status = 3;
                 nextRound++;
                 GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
                 GameSound.getIstance().getAudio(GameSound.WIN).play();
                 saveScore();
-                round = 1;
+                level = 1;
                 return;
             }
-            round = round + 1;
+            level++;
             nextRound++;
             status = 2;
         }
@@ -549,7 +549,7 @@ public class Manager
 
     public void setNewBomb()
     {
-        switch (round)
+        switch (level)
         {
             case 1:
                 mBomber.setNew(0, 540);
@@ -662,7 +662,7 @@ public class Manager
 
     public void setRound(int round)
     {
-        this.round = 1;
+        this.level = 1;
     }
 
 }
