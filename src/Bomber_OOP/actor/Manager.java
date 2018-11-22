@@ -14,15 +14,15 @@ public class Manager
 {
     public static int animation = 0;
     private Random random = new Random();
-    private Bomber mBomber;
-    private ArrayList<Box> arrBox;
-    private ArrayList<Box> arrShawDow;
-    private ArrayList<Bomb> arrBomb;
-    private ArrayList<BombBang> arrBombBang;
-    private ArrayList<Monster> arrMonster;
-    private ArrayList<Item> arrItem;
-    private ArrayList<HightScore> arrHightScore;
-    private String Background;
+    public Bomber mBomber;
+    public ArrayList<Box> arrBox;
+    public ArrayList<Box> arrShawDow;
+    public ArrayList<Bomb> arrBomb;
+    public ArrayList<BombBang> arrBombBang;
+    public ArrayList<Monster> arrMonster;
+    public ArrayList<Item> arrItem;
+    public ArrayList<HightScore> arrHightScore;
+    public String Background;
     private int level = 1;
     private int nextLevel = 0;
     private int status = 0;
