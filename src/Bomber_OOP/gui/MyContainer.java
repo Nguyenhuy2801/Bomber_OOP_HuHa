@@ -4,6 +4,7 @@ import sound.GameSound;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileNotFoundException;
 
 public class MyContainer extends JPanel
 {
@@ -18,7 +19,7 @@ public class MyContainer extends JPanel
     private Option mOption;
     private HightScorePanel mHightScorePanel;
 
-    public MyContainer(GUI mGui)
+    public MyContainer(GUI mGui) throws FileNotFoundException
     {
         this.gui = mGui;
         setBackground(Color.WHITE);

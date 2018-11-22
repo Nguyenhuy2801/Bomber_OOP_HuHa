@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.FileNotFoundException;
 import java.util.BitSet;
 
 
@@ -41,7 +42,7 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
         }
     };
 
-    public PlayGame(MyContainer mContainer)
+    public PlayGame(MyContainer mContainer) throws FileNotFoundException
     {
         this.mContainer = mContainer;
         setBackground(Color.WHITE);
@@ -149,7 +150,14 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
                 timeLose++;
                 if (timeLose == 3000)
                 {
-                    mMagager.innitManager();
+                    try
+                    {
+                        mMagager.innitManager();
+                    }
+                    catch (FileNotFoundException e)
+                    {
+                        e.printStackTrace();
+                    }
                     mContainer.setShowMenu();
                     timeLose = 0;
                 }
@@ -160,7 +168,14 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
                 timeNext++;
                 if (timeNext == 3000)
                 {
-                    mMagager.innitManager();
+                    try
+                    {
+                        mMagager.innitManager();
+                    }
+                    catch (FileNotFoundException e)
+                    {
+                        e.printStackTrace();
+                    }
                     timeNext = 0;
                 }
             }
@@ -170,7 +185,14 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
                 timeNext++;
                 if (timeNext == 3000)
                 {
-                    mMagager.innitManager();
+                    try
+                    {
+                        mMagager.innitManager();
+                    }
+                    catch (FileNotFoundException e)
+                    {
+                        e.printStackTrace();
+                    }
                     mContainer.setShowMenu();
                     timeNext = 0;
                 }
@@ -212,7 +234,14 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
         if (e.getSource() == btn_Menu)
         {
             mMagager.setRound(1);
-            mMagager.innitManager();
+            try
+            {
+                mMagager.innitManager();
+            }
+            catch (FileNotFoundException e1)
+            {
+                e1.printStackTrace();
+            }
             mContainer.setShowMenu();
         }
 

@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.FileNotFoundException;
 
 public class GUI extends JFrame
     {
@@ -22,7 +23,7 @@ public class GUI extends JFrame
         }
     };
 
-    public GUI()
+    public GUI() throws FileNotFoundException
     {
         setSize(WIDTHJF, HEIGHTJF);
         setLayout(new CardLayout());
