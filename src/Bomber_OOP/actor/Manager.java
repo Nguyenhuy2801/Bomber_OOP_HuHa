@@ -12,6 +12,7 @@ import java.util.Random;
 
 public class Manager
 {
+    public static int animation = 0;
     private Random random = new Random();
     private Bomber mBomber;
     private ArrayList<Box> arrBox;
@@ -22,7 +23,7 @@ public class Manager
     private ArrayList<Item> arrItem;
     private ArrayList<HightScore> arrHightScore;
     private String Background;
-    private int level = 1;
+    private int round = 1;
     private int nextRound = 0;
     private int status = 0;
 
@@ -33,7 +34,7 @@ public class Manager
 
     public void innitManager()
     {
-        switch (level)
+        switch (round)
         {
             case 1:
                 mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
@@ -252,7 +253,7 @@ public class Manager
         {
             if (type == 2)
             {
-                g2d.drawString("Level " + level, 200, 250);
+                g2d.drawString("Round " + round, 200, 250);
             }
             else
             {
@@ -350,29 +351,14 @@ public class Manager
     {
         if (mBomber.getHeart() == 0 && nextRound == 0)
         {
-            level = 1;
+            round = 1;
             status = 1;
             nextRound++;
             GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
             GameSound.getIstance().getAudio(GameSound.LOSE).play();
             saveScore();
         }
-        if (arrMonster.size() == 0 && nextRound == 0)
-        {
-            if (level == 3)
-            {
-                status = 3;
-                nextRound++;
-                GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
-                GameSound.getIstance().getAudio(GameSound.WIN).play();
-                saveScore();
-                level = 1;
-                return;
-            }
-            level++;
-            nextRound++;
-            status = 2;
-        }
+
     }
 
     public void checkDead()
@@ -399,7 +385,8 @@ public class Manager
                 Image icon;
                 for (int j = 0; j < 3000; j++)
                 {
-                    icon = new ImageIcon(getClass().getResource("/Images/player_dead" + (j/1000%3) + ".png")).getImage();
+//                    icon = new ImageIcon(getClass().getResource("/Images/player_dead" + (j/1000%2 + 1) + ".png")).getImage();
+                    icon = new ImageIcon(getClass().getResource("/Images/bomber_dead.png")).getImage();
                     mBomber.setImg(icon);
                 }
 
@@ -437,6 +424,34 @@ public class Manager
                 {
                     mBomber.setSpeed(mBomber.getSpeed() - 1);
                     arrItem.remove(i);
+                    break;
+                }
+                if (arrItem.get(i).getType() == Item.Item_Door)
+                {
+                    //TODO: something there
+                    if (arrMonster.size() == 0)
+                    {
+                        System.out.println("endgame");
+                        if (arrMonster.size() == 0 && nextRound == 0)
+                        {
+                            if (round == 3)
+                            {
+                                status = 3;
+                                nextRound++;
+                                GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
+                                GameSound.getIstance().getAudio(GameSound.WIN).play();
+                                saveScore();
+                                round = 1;
+                                return;
+                            }
+                            round = round + 1;
+                            nextRound++;
+                            status = 2;
+                        }
+                        //end game there
+                    }
+
+//                    arrItem.remove(i);
                     break;
                 }
             }
@@ -528,7 +543,7 @@ public class Manager
         {
             for (int j = 0; j < arrItem.size(); j++)
             {
-                if (arrBombBang.get(i).isImpactBombBangvsItem(arrItem.get(j)))
+                if (arrBombBang.get(i).isImpactBombBangvsItem(arrItem.get(j)) && arrItem.get(j).getType() != Item.Item_Door)
                 {
                     arrItem.remove(j);
                 }
@@ -549,7 +564,7 @@ public class Manager
 
     public void setNewBomb()
     {
-        switch (level)
+        switch (round)
         {
             case 1:
                 mBomber.setNew(0, 540);
@@ -571,7 +586,7 @@ public class Manager
         for (int i = 0; i < arrMonster.size(); i++)
         {
             int orient = random.nextInt(4) + 1;
-            arrMonster.get(i).changeOrient(orient, 0);
+            arrMonster.get(i).changeOrient(orient, animation++);
         }
     }
 
@@ -579,11 +594,16 @@ public class Manager
     {
         for (int i = 0; i < arrMonster.size(); i++)
         {
+            int orient;
             if (arrMonster.get(i).move(count, arrBomb, arrBox) == false)
             {
-                int orient = random.nextInt(4) + 1;
-                arrMonster.get(i).changeOrient(orient, 0);
+                orient = random.nextInt(4) + 1;
             }
+            else
+            {
+                orient = arrMonster.get(i).getOrient();
+            }
+            arrMonster.get(i).changeOrient(orient, animation++);
         }
     }
 
@@ -662,7 +682,7 @@ public class Manager
 
     public void setRound(int round)
     {
-        this.level = 1;
+        this.round = 1;
     }
 
 }

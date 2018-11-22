@@ -143,4 +143,4 @@ public class Menu extends JPanel
         return label;
     }
 
-}	
+}

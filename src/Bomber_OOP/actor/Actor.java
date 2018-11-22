@@ -200,7 +200,7 @@ public class Actor
     public void changeOrient(int orient, int i)
     {
         this.orient = orient;
-//        this.i = i;
+//                this.i = i;
     }
 
     public int getX()

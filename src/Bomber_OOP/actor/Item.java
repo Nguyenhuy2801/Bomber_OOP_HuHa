@@ -8,6 +8,7 @@ public class Item
     public static int Item_Bomb = 1;
     public static int Item_BombSize = 2;
     public static int Item_Shoe = 3;
+    public static int Item_Door = 4;
     private int x, y, type, width, height, timeLine;
     private Image img;
 

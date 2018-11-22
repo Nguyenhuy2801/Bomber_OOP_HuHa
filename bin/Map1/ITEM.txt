@@ -7,3 +7,4 @@
 585:405:3:/Images/item_shoe.png
 225:495:3:/Images/item_shoe.png
 495:315:3:/Images/item_shoe.png
+100:100:4:/Images/item_door.png
