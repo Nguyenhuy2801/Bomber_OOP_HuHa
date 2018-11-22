@@ -8,9 +8,9 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class GUI extends JFrame
-{
-    public static final int WIDTHJF = 905;
-    public static final int HEIGHTJF = 615;
+    {
+    public static final int WIDTHJF = 1600;
+    public static final int HEIGHTJF = 900;
     private MyContainer mContainer;
     private WindowAdapter mwindow = new WindowAdapter()
     {

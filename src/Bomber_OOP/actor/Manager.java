@@ -23,8 +23,8 @@ public class Manager
     private ArrayList<Item> arrItem;
     private ArrayList<HightScore> arrHightScore;
     private String Background;
-    private int round = 1;
-    private int nextRound = 0;
+    private int level = 1;
+    private int nextLevel = 0;
     private int status = 0;
 
     public Manager()
@@ -34,24 +34,24 @@ public class Manager
 
     public void innitManager()
     {
-        switch (round)
+        switch (level)
         {
             case 1:
-                mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 1, 1, 1);
+                mBomber = new Bomber(45, 67, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
                 innit("src/Map1/BOX.txt", "src/Map1/SHADOW.txt", "src/Map1/MONSTER.txt", "src/Map1/ITEM.txt");
-                nextRound = 0;
+                nextLevel = 0;
                 status = 0;
                 break;
             case 2:
                 mBomber.setNew(315, 270);
                 innit("src/Map2/BOX.txt", "src/Map2/SHADOW.txt", "src/Map2/MONSTER.txt", "src/Map2/ITEM.txt");
-                nextRound = 0;
+                nextLevel = 0;
                 status = 0;
                 break;
             case 3:
                 mBomber.setNew(315, 495);
                 innit("src/Map3/BOX.txt", "src/Map3/SHADOW.txt", "src/Map3/MONSTER.txt", "src/Map3/ITEM.txt");
-                nextRound = 0;
+                nextLevel = 0;
                 status = 0;
                 break;
 
@@ -253,7 +253,7 @@ public class Manager
         {
             if (type == 2)
             {
-                g2d.drawString("Round " + round, 200, 250);
+                g2d.drawString("Level " + level, 200, 250);
             }
             else
             {
@@ -297,26 +297,26 @@ public class Manager
         Image imgInfor = new ImageIcon(getClass().getResource("/Images/background_Info.png")).getImage();
         g2d.setFont(new Font("Arial", Font.BOLD, 20));
         g2d.setColor(Color.RED);
-        g2d.drawImage(imgInfor, 675, 0, null);
-        g2d.drawString("HEART", 755, 100);
+        g2d.drawImage(imgInfor, 1395, 0, null);
+        g2d.drawString("HEART", 1475, 100);
         Image heart = new ImageIcon(getClass().getResource("/Images/heart_1.png")).getImage();
         if (mBomber.getHeart() == 3)
         {
-            g2d.drawImage(heart, 750, 120, null);
-            g2d.drawImage(heart, 775, 120, null);
-            g2d.drawImage(heart, 800, 120, null);
+            g2d.drawImage(heart, 1470, 120, null);
+            g2d.drawImage(heart, 1495, 120, null);
+            g2d.drawImage(heart, 1520, 120, null);
         }
         if (mBomber.getHeart() == 2)
         {
-            g2d.drawImage(heart, 760, 120, null);
-            g2d.drawImage(heart, 790, 120, null);
+            g2d.drawImage(heart, 1480, 120, null);
+            g2d.drawImage(heart, 1515, 120, null);
         }
         if (mBomber.getHeart() == 1)
         {
-            g2d.drawImage(heart, 775, 120, null);
+            g2d.drawImage(heart, 1495, 120, null);
         }
 
-        g2d.drawString("SCORE : " + mBomber.getScore(), 740, 200);
+        g2d.drawString("SCORE : " + mBomber.getScore(), 1465, 200);
     }
 
     public void drawAllBomb(Graphics2D g2d)
@@ -349,11 +349,11 @@ public class Manager
 
     public void checkWinAndLose()
     {
-        if (mBomber.getHeart() == 0 && nextRound == 0)
+        if (mBomber.getHeart() == 0 && nextLevel == 0)
         {
-            round = 1;
+            level = 1;
             status = 1;
-            nextRound++;
+            nextLevel++;
             GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
             GameSound.getIstance().getAudio(GameSound.LOSE).play();
             saveScore();
@@ -427,25 +427,24 @@ public class Manager
                 }
                 if (arrItem.get(i).getType() == Item.Item_Door)
                 {
-                    //TODO: something there
                     if (arrMonster.size() == 0)
                     {
                         System.out.println("endgame");
                         //end game there
-                        if (arrMonster.size() == 0 && nextRound == 0)
+                        if (arrMonster.size() == 0 && nextLevel == 0)
                         {
-                            if (round == 3)
+                            if (level == 3)
                             {
                                 status = 3;
-                                nextRound++;
+                                nextLevel++;
                                 GameSound.getIstance().getAudio(GameSound.PLAYGAME).stop();
                                 GameSound.getIstance().getAudio(GameSound.WIN).play();
                                 saveScore();
-                                round = 1;
+                                level = 1;
                                 return;
                             }
-                            round = round + 1;
-                            nextRound++;
+                            level = level + 1;
+                            nextLevel++;
                             status = 2;
                         }
                     }
@@ -563,10 +562,10 @@ public class Manager
 
     public void setNewBomb()
     {
-        switch (round)
+        switch (level)
         {
             case 1:
-                mBomber.setNew(0, 540);
+                mBomber.setNew(45, 67);
                 break;
             case 2:
                 mBomber.setNew(315, 270);
@@ -681,7 +680,7 @@ public class Manager
 
     public void setRound(int round)
     {
-        this.round = 1;
+        this.level = 1;
     }
 
 }

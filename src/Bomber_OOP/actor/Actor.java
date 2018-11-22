@@ -86,7 +86,7 @@ public class Actor
                 }
                 break;
             case RIGHT:
-                if (x > (675 - width))
+                if (x > (1600 - width))
                 {
                     return false;
                 }

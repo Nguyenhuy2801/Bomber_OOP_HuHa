@@ -5,10 +5,6 @@ import java.awt.*;
 
 public class Bomb extends Actor
 {
-    //	protected int x,y,type,orient, speed, width, height, runBomb;
-    //	protected Image img;
-    //	protected int x,y,size,widthBomb, heightBomb,timeline,type;
-    //	protected Image img;
     protected int size, timeline;
 
     public Bomb(int x, int y, int size, int timeline)
