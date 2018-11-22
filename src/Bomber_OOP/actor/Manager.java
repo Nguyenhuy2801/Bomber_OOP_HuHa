@@ -5,10 +5,7 @@ import sound.GameSound;
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Random;
+import java.util.*;
 
 public class Manager
 {
@@ -27,30 +24,30 @@ public class Manager
     private int nextLevel = 0;
     private int status = 0;
 
-    public Manager()
+    public Manager() throws FileNotFoundException
     {
         innitManager();
     }
 
-    public void innitManager()
+    public void innitManager() throws FileNotFoundException
     {
         switch (level)
         {
             case 1:
                 mBomber = new Bomber(45, 67, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
-                innit("src/Map1/BOX.txt", "src/Map1/SHADOW.txt", "src/Map1/MONSTER.txt", "src/Map1/ITEM.txt");
+                innit(pathLevel1);
                 nextLevel = 0;
                 status = 0;
                 break;
             case 2:
                 mBomber.setNew(315, 270);
-                innit("src/Map2/BOX.txt", "src/Map2/SHADOW.txt", "src/Map2/MONSTER.txt", "src/Map2/ITEM.txt");
+                innit(pathLevel2);
                 nextLevel = 0;
                 status = 0;
                 break;
             case 3:
                 mBomber.setNew(315, 495);
-                innit("src/Map3/BOX.txt", "src/Map3/SHADOW.txt", "src/Map3/MONSTER.txt", "src/Map3/ITEM.txt");
+                innit(pathLevel3);
                 nextLevel = 0;
                 status = 0;
                 break;
@@ -61,7 +58,7 @@ public class Manager
 
     }
 
-    public void innit(String pathBox, String pathShadow, String pathMonster, String pathItem)
+    public void innit(String pathLevel) throws FileNotFoundException
     {
         arrBox = new ArrayList<Box>();
         arrShawDow = new ArrayList<Box>();
@@ -70,94 +67,94 @@ public class Manager
         arrMonster = new ArrayList<Monster>();
         arrItem = new ArrayList<Item>();
         arrHightScore = new ArrayList<HightScore>();
-
-        innitArrBox(pathBox, pathShadow);
-        initarrMonster(pathMonster);
-        innitArrItem(pathItem);
+        LoadMap(pathLevel);
+//        innitArrBox(pathBox, pathShadow);
+//        initarrMonster(pathMonster);
+//        innitArrItem(pathItem);
         innitArrHightScore("src/hightscore/HightScore.txt");
     }
 
-    public void innitArrItem(String path)
-    {
-        try
-        {
-            FileReader file = new FileReader(path);
-            BufferedReader input = new BufferedReader(file);
-            String line;
-            while ((line = input.readLine()) != null)
-            {
-                String str[] = line.split(":");
-                int x = Integer.parseInt(str[0]);
-                int y = Integer.parseInt(str[1]);
-                int type = Integer.parseInt(str[2]);
-                String images = str[3];
-                Item item = new Item(x, y, type, images);
-                arrItem.add(item);
-            }
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
+//    public void innitArrItem(String path)
+//    {
+//        try
+//        {
+//            FileReader file = new FileReader(path);
+//            BufferedReader input = new BufferedReader(file);
+//            String line;
+//            while ((line = input.readLine()) != null)
+//            {
+//                String str[] = line.split(":");
+//                int x = Integer.parseInt(str[0]);
+//                int y = Integer.parseInt(str[1]);
+//                int type = Integer.parseInt(str[2]);
+//                String images = str[3];
+//                Item item = new Item(x, y, type, images);
+//                arrItem.add(item);
+//            }
+//        }
+//        catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (IOException e)
+//        {
+//            e.printStackTrace();
+//        }
+//    }
 
-    public void innitArrBox(String pathBox, String pathShadow)
-    {
-        try
-        {
-            FileReader file = new FileReader(pathBox);
-            BufferedReader input = new BufferedReader(file);
-            Background = input.readLine();
-            String line;
-            while ((line = input.readLine()) != null)
-            {
-                String str[] = line.split(":");
-                int x = Integer.parseInt(str[0]);
-                int y = Integer.parseInt(str[1]);
-                int type = Integer.parseInt(str[2]);
-                String images = str[3];
-                Box box = new Box(x, y, type, images);
-                arrBox.add(box);
-            }
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-
-        try
-        {
-            FileReader fileShawDow = new FileReader(pathShadow);
-            BufferedReader inputShawDow = new BufferedReader(fileShawDow);
-            String line;
-            while ((line = inputShawDow.readLine()) != null)
-            {
-                String str[] = line.split(":");
-                int x = Integer.parseInt(str[0]);
-                int y = Integer.parseInt(str[1]);
-                int type = Integer.parseInt(str[2]);
-                String images = str[3];
-                Box box = new Box(x, y, type, images);
-                arrShawDow.add(box);
-            }
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
+//    public void innitArrBox(String pathBox, String pathShadow)
+//    {
+//        try
+//        {
+//            FileReader file = new FileReader(pathBox);
+//            BufferedReader input = new BufferedReader(file);
+//            Background = input.readLine();
+//            String line;
+//            while ((line = input.readLine()) != null)
+//            {
+//                String str[] = line.split(":");
+//                int x = Integer.parseInt(str[0]);
+//                int y = Integer.parseInt(str[1]);
+//                int type = Integer.parseInt(str[2]);
+//                String images = str[3];
+//                Box box = new Box(x, y, type, images);
+//                arrBox.add(box);
+//            }
+//        }
+//        catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (IOException e)
+//        {
+//            e.printStackTrace();
+//        }
+//
+//        try
+//        {
+//            FileReader fileShawDow = new FileReader(pathShadow);
+//            BufferedReader inputShawDow = new BufferedReader(fileShawDow);
+//            String line;
+//            while ((line = inputShawDow.readLine()) != null)
+//            {
+//                String str[] = line.split(":");
+//                int x = Integer.parseInt(str[0]);
+//                int y = Integer.parseInt(str[1]);
+//                int type = Integer.parseInt(str[2]);
+//                String images = str[3];
+//                Box box = new Box(x, y, type, images);
+//                arrShawDow.add(box);
+//            }
+//        }
+//        catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (IOException e)
+//        {
+//            e.printStackTrace();
+//        }
+//    }
 
     public void innitBomb()
     {
@@ -184,36 +181,36 @@ public class Manager
         arrBomb.add(mBomb);
     }
 
-    public void initarrMonster(String path)
-    {
-        try
-        {
-            FileReader file = new FileReader(path);
-            BufferedReader input = new BufferedReader(file);
-            String line;
-            while ((line = input.readLine()) != null)
-            {
-                String str[] = line.split(":");
-                int x = Integer.parseInt(str[0]);
-                int y = Integer.parseInt(str[1]);
-                int type = Integer.parseInt(str[2]);
-                int orient = Integer.parseInt(str[3]);
-                int speed = Integer.parseInt(str[4]);
-                int heart = Integer.parseInt(str[5]);
-                String images = str[6];
-                Monster monster = new Monster(x, y, type, orient, speed, heart, images);
-                arrMonster.add(monster);
-            }
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
+//    public void initarrMonster(String path)
+//    {
+//        try
+//        {
+//            FileReader file = new FileReader(path);
+//            BufferedReader input = new BufferedReader(file);
+//            String line;
+//            while ((line = input.readLine()) != null)
+//            {
+//                String str[] = line.split(":");
+//                int x = Integer.parseInt(str[0]);
+//                int y = Integer.parseInt(str[1]);
+//                int type = Integer.parseInt(str[2]);
+//                int orient = Integer.parseInt(str[3]);
+//                int speed = Integer.parseInt(str[4]);
+//                int heart = Integer.parseInt(str[5]);
+//                String images = str[6];
+//                Monster monster = new Monster(x, y, type, orient, speed, heart, images);
+//                arrMonster.add(monster);
+//            }
+//        }
+//        catch (FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (IOException e)
+//        {
+//            e.printStackTrace();
+//        }
+//    }
 
     public void innitArrHightScore(String path)
     {
@@ -681,6 +678,131 @@ public class Manager
     public void setRound(int round)
     {
         this.level = 1;
+    }
+
+
+
+
+
+
+
+    private String pathLevel1 = "src/Map1/Map1.txt";
+    private String pathLevel2 = "src/Map1/Map1.txt";
+    private String pathLevel3 = "src/Map1/Map1.txt";
+    private String pathShadow1 = "Images/shadow1.png";
+    private String pathBox1 = "Images/box1.png";
+    private String pathShadow2 = "Images/shadow2.png";
+    private String pathBox2 = "Images/box2.png";
+    private String pathMonster2 = "Images/balloom_right0.png";
+    private String pathItem2 = "Images/item_bombsize.png";
+    private String pathDoor = "Images/item_door.png";
+    private String pathItem1 = "Images/item_bomb.png";
+    private String pathItem3 = "Images/item_shoe.png";
+
+
+    public void addItem(int i, int row, int type, String path)
+    {
+        int itemX = i * 40;
+        int itemY = row * 52;
+
+        Item item = new Item(itemX, itemY, type, path);
+        this.arrItem.add(item);
+    }
+
+
+    public void LoadMap(String path) throws FileNotFoundException
+    {
+        File map = new File(path);
+        Scanner sc = new Scanner(map);
+        String s;
+        int row = 0;
+        while (sc.hasNextLine())
+        {
+            s = sc.nextLine();
+            for (int i = 0; i < s.length(); i++)
+            {
+                switch (s.charAt(i))
+                {
+                    case '#':
+                    {
+                        //TODO:
+                        int shadowX = i * 40;
+                        int shadowY = row * 52;
+                        int boxX = shadowX;
+                        int boxY = shadowY + 15;
+
+                        int type = 1;
+
+                        Box box1 = new Box(boxX, boxY, type, pathBox1);
+                        this.arrBox.add(box1);
+
+                        Box shadowBox1 = new Box(shadowX, shadowY, type, pathShadow1);
+                        this.arrBox.add(shadowBox1);
+                        break;
+                    }
+                    case '*':
+                    {
+                        int shadowX = i * 40;
+                        int shadowY = row * 52;
+                        int boxX = shadowX;
+                        int boxY = shadowY + 15;
+
+                        int type = 0;
+
+                        Box box2 = new Box(boxX, boxY, type, pathBox2);
+                        this.arrBox.add(box2);
+
+                        Box shadowBox2 = new Box(shadowX, shadowY, type, pathShadow2);
+                        this.arrBox.add(shadowBox2);
+                        //TODO:
+
+                        break;
+                    }
+                    case '1':
+                    {
+                        //TODO:
+                        int monsterX = i * 40;
+                        int monsterY = row * 52;
+
+                        int type = 2;
+                        int orient = 3;
+                        int speed = 10;
+                        int heart = 1;
+
+                        Monster monster2 = new Monster(monsterX, monsterY, type, orient, speed, heart, pathMonster2);
+
+                        this.arrMonster.add(monster2);
+                        break;
+                    }
+                    case 'f':
+                    {
+                        //TODO:
+                        addItem(i, row, 2, pathItem2);
+                        break;
+                    }
+                    case 'x':
+                    {
+                        addItem(i, row, 4, pathDoor);
+                        //TODO:
+                        break;
+                    }
+                    case 'b':
+                    {
+                        //TODO:
+                        addItem(i, row, 1, pathItem1);
+                        break;
+                    }
+                    case 's':
+                    {
+                        //TODO:
+                        addItem(i, row, 3, pathItem3);
+                        break;
+                    }
+                }
+            }
+
+            row++;
+        }
     }
 
 }
