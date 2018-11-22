@@ -37,7 +37,7 @@ public class Manager
         switch (round)
         {
             case 1:
-                mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
+                mBomber = new Bomber(0, 540, Actor.BOMBER, Actor.DOWN, 1, 1, 1);
                 innit("src/Map1/BOX.txt", "src/Map1/SHADOW.txt", "src/Map1/MONSTER.txt", "src/Map1/ITEM.txt");
                 nextRound = 0;
                 status = 0;
@@ -358,7 +358,6 @@ public class Manager
             GameSound.getIstance().getAudio(GameSound.LOSE).play();
             saveScore();
         }
-
     }
 
     public void checkDead()
@@ -432,6 +431,7 @@ public class Manager
                     if (arrMonster.size() == 0)
                     {
                         System.out.println("endgame");
+                        //end game there
                         if (arrMonster.size() == 0 && nextRound == 0)
                         {
                             if (round == 3)
@@ -448,7 +448,6 @@ public class Manager
                             nextRound++;
                             status = 2;
                         }
-                        //end game there
                     }
 
 //                    arrItem.remove(i);
