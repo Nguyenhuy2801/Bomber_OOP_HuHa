@@ -28,13 +28,13 @@ public class Actor
         switch (type)
         {
             case BOMBER:
-                g2d.drawImage(img, x, y - 20, null);
+                g2d.drawImage(img, x, y - 10, null);
                 break;
             case MONSTER:
-                g2d.drawImage(img, x, y - 23, null);
+                g2d.drawImage(img, x, y - 10, null);
                 break;
             case BOMB:
-                g2d.drawImage(img, x, y, null);
+                g2d.drawImage(img, x, y + 30, null);
                 break;
 
             default:

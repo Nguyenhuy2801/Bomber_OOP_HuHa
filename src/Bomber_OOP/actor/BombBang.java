@@ -12,7 +12,7 @@ public class BombBang
     public BombBang(int x, int y, int size, ArrayList<Box> arrBox)
     {
         this.x = x;
-        this.y = y;
+        this.y = y + 30;
         this.size = size;
         this.timeLine = 250;
         img_left = new ImageIcon(getClass().getResource("/Images/bombbang_left_1.png")).getImage();

@@ -18,7 +18,7 @@ public class Item
         this.x = x;
         this.y = y;
         this.type = type;
-        this.img = new ImageIcon(getClass().getResource(image)).getImage();
+        this.img = new ImageIcon(getClass().getResource("/Images/item_bombsize.png")).getImage();
         this.width = img.getWidth(null);
         this.height = img.getHeight(null);
         timeLine = 250;

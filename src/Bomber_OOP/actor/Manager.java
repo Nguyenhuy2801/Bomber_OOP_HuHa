@@ -285,7 +285,7 @@ public class Manager
 
     public void draWBackground(Graphics2D g2d)
     {
-        Image imgBackground = new ImageIcon(getClass().getResource(Background)).getImage();
+        Image imgBackground = new ImageIcon(getClass().getResource("/Images/background_Play.png")).getImage();
         g2d.drawImage(imgBackground, 0, 0, null);
     }
 
