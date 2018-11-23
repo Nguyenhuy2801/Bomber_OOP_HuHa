@@ -27,12 +27,12 @@ public class Option extends JPanel implements ActionListener
         lbbackground.setBackground(Color.BLACK);
         backgroundIcon = new ImageIcon(getClass().getResource("/Images/background_option.png"));
         lbbackground.setIcon(backgroundIcon);
-        add(lbbackground);
         Button_OK = new JButton();
         Button_OK.setText("OK");
-        Button_OK.setBounds(400, 520, 100, 50);
+        Button_OK.setBounds(400, 520, 100, 30);
         Button_OK.addActionListener(this);
         add(Button_OK);
+        add(lbbackground);
     }
 
     @Override

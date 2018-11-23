@@ -16,7 +16,7 @@ public class Box
         this.x = x;
         this.y = y;
         this.type = type;
-        this.img = new ImageIcon(getClass().getResource("/Images/shawdow1.png")).getImage();
+        this.img = new ImageIcon(getClass().getResource(images)).getImage();
         this.width = img.getWidth(null);
         this.height = img.getHeight(null);
     }

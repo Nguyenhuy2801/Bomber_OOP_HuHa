@@ -294,26 +294,26 @@ public class Manager
         Image imgInfor = new ImageIcon(getClass().getResource("/Images/background_Info.png")).getImage();
         g2d.setFont(new Font("Arial", Font.BOLD, 20));
         g2d.setColor(Color.RED);
-        g2d.drawImage(imgInfor, 1395, 0, null);
-        g2d.drawString("HEART", 1475, 100);
+        g2d.drawImage(imgInfor, 1240, 0, null);
+        g2d.drawString("HEART", 1320, 100);
         Image heart = new ImageIcon(getClass().getResource("/Images/heart_1.png")).getImage();
         if (mBomber.getHeart() == 3)
         {
-            g2d.drawImage(heart, 1470, 120, null);
-            g2d.drawImage(heart, 1495, 120, null);
-            g2d.drawImage(heart, 1520, 120, null);
+            g2d.drawImage(heart, 1315, 120, null);
+            g2d.drawImage(heart, 1340, 120, null);
+            g2d.drawImage(heart, 1365, 120, null);
         }
         if (mBomber.getHeart() == 2)
         {
-            g2d.drawImage(heart, 1480, 120, null);
-            g2d.drawImage(heart, 1515, 120, null);
+            g2d.drawImage(heart, 1325, 120, null);
+            g2d.drawImage(heart, 1360, 120, null);
         }
         if (mBomber.getHeart() == 1)
         {
-            g2d.drawImage(heart, 1495, 120, null);
+            g2d.drawImage(heart, 1340, 120, null);
         }
 
-        g2d.drawString("SCORE : " + mBomber.getScore(), 1465, 200);
+        g2d.drawString("SCORE : " + mBomber.getScore() * 10, 1310, 200);
     }
 
     public void drawAllBomb(Graphics2D g2d)
@@ -689,15 +689,15 @@ public class Manager
     private String pathLevel1 = "src/Map1/Map1.txt";
     private String pathLevel2 = "src/Map1/Map1.txt";
     private String pathLevel3 = "src/Map1/Map1.txt";
-    private String pathShadow1 = "Images/shadow1.png";
-    private String pathBox1 = "Images/box1.png";
-    private String pathShadow2 = "Images/shadow2.png";
-    private String pathBox2 = "Images/box2.png";
-    private String pathMonster2 = "Images/balloom_right0.png";
-    private String pathItem2 = "Images/item_bombsize.png";
-    private String pathDoor = "Images/item_door.png";
-    private String pathItem1 = "Images/item_bomb.png";
-    private String pathItem3 = "Images/item_shoe.png";
+    private String pathShadow1 = "/Images/shawdow1.png";
+    private String pathBox1 = "/Images/box1.png";
+    private String pathShadow2 = "/Images/shawdow2.png";
+    private String pathBox2 = "/Images/box2.png";
+    private String pathMonster2 = "/Images/balloom_right0.png";
+    private String pathItem2 = "/Images/item_bombsize.png";
+    private String pathDoor = "/Images/item_door.png";
+    private String pathItem1 = "/Images/item_bomb.png";
+    private String pathItem3 = "/Images/item_shoe.png";
 
 
     public void addItem(int i, int row, int type, String path)

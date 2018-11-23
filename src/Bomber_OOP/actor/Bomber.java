@@ -26,7 +26,7 @@ public class Bomber extends Actor
         this.score = 0;
         this.status = ALIVE;
         this.img = new ImageIcon(getClass().getResource("/Images/player_down_0.png")).getImage();
-        width = img.getWidth(null);
+        width = img.getWidth(null)- 20;
         height = img.getHeight(null)- 15;
     }
 

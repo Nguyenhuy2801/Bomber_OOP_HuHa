@@ -16,7 +16,7 @@ public class Monster extends Actor
         this.orient = orient;
         this.speed = speed;
         this.heart = heart;
-        this.img = new ImageIcon(getClass().getResource("/Images/balloom_right0.png")).getImage();
+        this.img = new ImageIcon(getClass().getResource(images)).getImage();
         width = img.getWidth(null);
         if (type == Actor.MONSTER)
         {

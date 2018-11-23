@@ -25,7 +25,7 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
     private int timeDead = 0;
     private int timeLose = 0;
     private int timeNext = 0;
-    private JButton btn_Menu;
+    private JButton back_menu;
     private int i = 0;
     private KeyAdapter keyAdapter = new KeyAdapter()
     {
@@ -56,11 +56,11 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
 
     private void innitCompts()
     {
-        btn_Menu = new JButton();
-        btn_Menu.setText("Exit");
-        btn_Menu.setBounds(1470, 520, 100, 30);
-        btn_Menu.addActionListener(this);
-        add(btn_Menu);
+        back_menu = new JButton();
+        back_menu.setText("Back");
+        back_menu.setBounds(1300, 520, 100, 30);
+        back_menu.addActionListener(this);
+        add(back_menu);
     }
 
     @Override
@@ -231,7 +231,7 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        if (e.getSource() == btn_Menu)
+        if (e.getSource() == back_menu)
         {
             mMagager.setRound(1);
             try

@@ -2,19 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ebc83f-06b1-4a35-b9e2-4791a6a62195" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Map1/Map1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Actor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Bomber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Bomber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Map1/ITEM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Map1/ITEM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/BombBang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/BombBang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/actor/Monster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/gui/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/gui/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/gui/Option.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/gui/Option.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Bomber_OOP/gui/PlayGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Bomber_OOP/gui/PlayGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Images/background_Menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Images/background_Menu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Map1/ITEM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map1/ITEM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/gui/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/gui/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/background_Info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/background_Info.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/background_Menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/background_Menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/background_Play.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/background_Play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/box1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/box1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/box2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/box2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/shawdow1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/shawdow1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/shawdow2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/shawdow2.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,104 +79,108 @@
     <session id="257358459">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Map1" value="2" />
-          <entry key="java" value="62" />
-          <entry key="png" value="43" />
+          <entry key="java" value="72" />
+          <entry key="png" value="45" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="43" />
-          <entry key="JAVA" value="62" />
+          <entry key="Image" value="45" />
+          <entry key="JAVA" value="72" />
           <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2401" />
-          <entry key="txt" value="102" />
+          <entry key="java" value="2601" />
+          <entry key="txt" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2401" />
-          <entry key="PLAIN_TEXT" value="102" />
+          <entry key="JAVA" value="2601" />
+          <entry key="PLAIN_TEXT" value="108" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="532" selection-start-line="532" selection-end-line="532" />
+            <state relative-caret-position="-1095">
+              <caret line="315" column="65" selection-start-line="315" selection-start-column="65" selection-end-line="315" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#20491#20492#0" expanded="true" />
-                <element signature="e#20520#20521#0" expanded="true" />
-                <element signature="e#20567#20568#0" expanded="true" />
-                <element signature="e#20597#20598#0" expanded="true" />
-                <element signature="e#20635#20636#0" expanded="true" />
-                <element signature="e#20665#20666#0" expanded="true" />
-                <element signature="e#20699#20700#0" expanded="true" />
-                <element signature="e#20728#20729#0" expanded="true" />
-                <element signature="e#20771#20772#0" expanded="true" />
-                <element signature="e#20801#20802#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Map1/ITEM.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="34" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/Images/background_Info.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="142" selection-start-line="142" selection-end-line="142" />
+            <state relative-caret-position="301">
+              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java">
+        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+            <state relative-caret-position="213">
+              <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/HightScorePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/Option.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/MyContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-866">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -171,17 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/BombBang.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="88">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -189,26 +197,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+            <state relative-caret-position="-1284">
+              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Item.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Map1/BOX.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="27" />
+            <state relative-caret-position="154">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -229,6 +228,7 @@
       <find>mOption</find>
       <find>innit</find>
       <find>init</find>
+      <find>background_</find>
     </findStrings>
     <replaceStrings>
       <replace>Button_OK</replace>
@@ -256,18 +256,20 @@
         <option value="$PROJECT_DIR$/src/Map1/MONSTER.txt" />
         <option value="$PROJECT_DIR$/src/Bomber_OOP/LoadMap/LoadMap.java" />
         <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/MyContainer.java" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java" />
         <option value="$PROJECT_DIR$/src/Bomber_OOP/main/Main.java" />
         <option value="$PROJECT_DIR$/src/Map1/Map1.txt" />
         <option value="$PROJECT_DIR$/src/Map1/ITEM.txt" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Item.java" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java" />
-        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java" />
         <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/BombBang.java" />
         <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Actor.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Item.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/Menu.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/Option.java" />
+        <option value="$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java" />
       </list>
     </option>
   </component>
@@ -288,8 +290,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,6 +342,12 @@
               <item name="Bomber_OOP_HuHa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bomber_OOP_HuHa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bomber_OOP_HuHa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bomber_OOP_HuHa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Map1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,140 +360,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="nextRound&#9;PSI&#9;JAVA://Bomber_OOP.actor.Manager#nextRound&#10;timeNex&#9;PSI&#9;JAVA://Bomber_OOP.gui.PlayGame#timeNext&#10;DEAD&#9;PSI&#9;JAVA://Bomber_OOP.gui.PlayGame#timeDead&#10;ghost&#9;FILE&#9;file://D:/Bomber_OOP_HuHa/src/Images/ghost.png&#10;gho&#9;FILE&#9;file://D:/Bomber_OOP_HuHa/src/Images/ghost.png&#10;changeOrient&#9;PSI&#9;JAVA://com.bhuy.bomb.actor.Manager#changeOrientAll&#10;bomber&#9;FILE&#9;file://D:/Bomber_OOP_HuHa/src/Images/bomber_down.png" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542910370011" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542951354448" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/NguyenBaHuy_DatBom" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/actor/Manager$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/actor/Manager.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/gui/GUI$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/gui/GUI.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/gui/MyContainer.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/gui/PlayGame$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/gui/PlayGame.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/Bomber_OOP/main/Main.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Bomber_OOP/gui/MyContainer.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Bomber_OOP/main/Main.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Map1/Map1.txt</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Bomber_OOP/LoadMap/LoadMap.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -632,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542901822699</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="do hoa">
+      <created>1542932355195</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542932355196</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -640,8 +530,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119936034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -710,20 +601,11 @@
     <MESSAGE value="new commit" />
     <MESSAGE value="Lỗi di chuyển" />
     <MESSAGE value="balloom di chuyen" />
-    <MESSAGE value="do hoa" />
     <MESSAGE value="hihi" />
-    <option name="LAST_COMMIT_MESSAGE" value="hihi" />
+    <MESSAGE value="do hoa" />
+    <option name="LAST_COMMIT_MESSAGE" value="do hoa" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Images/balloom_left2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Images/balloom_right2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Images/minvo_right1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Images/minvo_right2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -774,25 +656,11 @@
     <entry file="file://$PROJECT_DIR$/src/Images/balloom_right0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/HightScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Images/Exit2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Images/Exit.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2662">
-          <caret line="126" column="18" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Images/bomb_1.png">
       <provider selected="true" editor-type-id="images" />
@@ -804,13 +672,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/LoadMap/LoadMap.java" />
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/HightScorePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Map2/ITEM.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -876,20 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/MyContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -911,20 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Map1/ITEM.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Map1/BOX.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Map1/SHADOW.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -932,24 +765,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Map1/ITEM.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -960,44 +786,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java">
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="572">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Map1/BOX.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3058">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/HightScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Images/background_option.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1095">
+          <caret line="315" column="65" selection-start-line="315" selection-start-column="65" selection-end-line="315" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Bomber.java">
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Monster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="-1284">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/actor/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/MyContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="532" selection-start-line="532" selection-end-line="532" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#20491#20492#0" expanded="true" />
-            <element signature="e#20520#20521#0" expanded="true" />
-            <element signature="e#20567#20568#0" expanded="true" />
-            <element signature="e#20597#20598#0" expanded="true" />
-            <element signature="e#20635#20636#0" expanded="true" />
-            <element signature="e#20665#20666#0" expanded="true" />
-            <element signature="e#20699#20700#0" expanded="true" />
-            <element signature="e#20728#20729#0" expanded="true" />
-            <element signature="e#20771#20772#0" expanded="true" />
-            <element signature="e#20801#20802#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-866">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/HightScorePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/Option.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/PlayGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Images/background_Info.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomber_OOP/gui/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
         </state>
       </provider>
     </entry>

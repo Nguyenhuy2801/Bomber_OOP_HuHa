@@ -10,8 +10,8 @@ import java.io.FileNotFoundException;
 
 public class GUI extends JFrame
     {
-    public static final int WIDTHJF = 1600;
-    public static final int HEIGHTJF = 900;
+    public static final int WIDTHJF = 1470;
+    public static final int HEIGHTJF = 720;
     private MyContainer mContainer;
     private WindowAdapter mwindow = new WindowAdapter()
     {
