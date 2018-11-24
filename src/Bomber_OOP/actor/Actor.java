@@ -15,6 +15,7 @@ public class Actor
     public static final int DEAD = 0;
     public static final int BOMBER = 1;
     public static final int MONSTER = 2;
+    public static final int KONDORIA = 5;
     public static final int BOSS = 3;
     public static final int BOMB = 4;
 
@@ -33,8 +34,11 @@ public class Actor
             case MONSTER:
                 g2d.drawImage(img, x, y - 10, null);
                 break;
+            case KONDORIA :
+            g2d.drawImage(img, x, y - 10, null);
+            break;
             case BOMB:
-                g2d.drawImage(img, x, y + 30, null);
+                g2d.drawImage(img, x, y  + 10, null);
                 break;
 
             default:
@@ -86,7 +90,7 @@ public class Actor
                 }
                 break;
             case RIGHT:
-                if (x > (1600 - width))
+                if (x > (1400 - width))
                 {
                     return false;
                 }

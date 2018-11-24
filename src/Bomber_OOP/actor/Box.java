@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Box
 {
-    public static int ALLROW_BANG = 0;
+
     public static int DISALLROW_BANG = 1;
     private int x, y, width, height, type;
     private Image img;

@@ -18,15 +18,7 @@ public class Monster extends Actor
         this.heart = heart;
         this.img = new ImageIcon(getClass().getResource(images)).getImage();
         width = img.getWidth(null);
-        if (type == Actor.MONSTER)
-        {
-            height = img.getHeight(null) - 5;
-        }
-        else
-        {
-            height = img.getHeight(null) - 5;
-        }
-
+        height = img.getHeight(null) - 5;
     }
 
     public void drawBoss(Graphics2D g2d)
@@ -80,6 +72,29 @@ public class Monster extends Actor
                     break;
             }
         }
+
+        else  if (type == Actor.KONDORIA)
+        {
+            switch (orient)
+            {
+                case LEFT:
+                    img = new ImageIcon(getClass().getResource("/Images/kondoria_left" + (i/1000 % 3) + ".png")).getImage();
+                    break;
+                case RIGHT:
+                    img = new ImageIcon(getClass().getResource("/Images/kondoria_right" + (i/1000 % 3) + ".png")).getImage();
+                    break;
+                case UP:
+                    img = new ImageIcon(getClass().getResource("/Images/kondoria_left" + (i/1000 % 3) + ".png")).getImage();
+                    break;
+                case DOWN:
+                    img = new ImageIcon(getClass().getResource("/Images/kondoria_right" + (i/1000 % 3) + ".png")).getImage();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
         else
         {
             switch (orient)

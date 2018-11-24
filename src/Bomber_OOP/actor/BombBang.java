@@ -12,7 +12,7 @@ public class BombBang
     public BombBang(int x, int y, int size, ArrayList<Box> arrBox)
     {
         this.x = x;
-        this.y = y + 30;
+        this.y = y + 15;
         this.size = size;
         this.timeLine = 250;
         img_left = new ImageIcon(getClass().getResource("/Images/bombbang_left_1.png")).getImage();
@@ -65,8 +65,8 @@ public class BombBang
     {
         g2d.drawImage(img_left, x + 45 - img_left.getWidth(null), y, null);
         g2d.drawImage(img_right, x, y, null);
-        g2d.drawImage(img_up, x, y + 45 - img_up.getHeight(null), null);
-        g2d.drawImage(img_down, x, y, null);
+        g2d.drawImage(img_up, x, y + 52 - img_up.getHeight(null), null);
+        g2d.drawImage(img_down, x, y , null);
     }
 
     private boolean isImpactBox(int x, int y, int width, int height, Box box)

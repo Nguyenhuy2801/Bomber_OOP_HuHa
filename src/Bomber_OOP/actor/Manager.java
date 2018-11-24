@@ -704,14 +704,14 @@ public class Manager
         int itemX = i * 45;
         int itemY = row * 52;
 
-        Item item = new Item(itemX, itemY, type, path);
+        Item item = new Item(itemX + 5, itemY + 6, type, path);
         this.arrItem.add(item);
 
         Box box2 = new Box(itemX, itemY + 15, 0, pathBox2);
         this.arrBox.add(box2);
 
         Box shadowBox2 = new Box(itemX, itemY, 0, pathShadow2);
-        this.arrBox.add(shadowBox2);
+        this.arrShawDow.add(shadowBox2);
     }
 
 
@@ -742,7 +742,7 @@ public class Manager
                         this.arrBox.add(box1);
 
                         Box shadowBox1 = new Box(shadowX, shadowY, type, pathShadow1);
-                        this.arrBox.add(shadowBox1);
+                        this.arrShawDow.add(shadowBox1);
                         break;
                     }
                     case '*':
@@ -758,7 +758,7 @@ public class Manager
                         this.arrBox.add(box2);
 
                         Box shadowBox2 = new Box(shadowX, shadowY, type, pathShadow2);
-                        this.arrBox.add(shadowBox2);
+                        this.arrShawDow.add(shadowBox2);
                         //TODO:
 
                         break;
@@ -770,6 +770,22 @@ public class Manager
                         int monsterY = row * 52 +5;
 
                         int type = 2;
+                        int orient = 3;
+                        int speed = 10;
+                        int heart = 1;
+
+                        Monster monster2 = new Monster(monsterX, monsterY, type, orient, speed, heart, pathMonster2);
+
+                        this.arrMonster.add(monster2);
+                        break;
+                    }
+                    case '5':
+                    {
+                        //TODO:
+                        int monsterX = i * 45;
+                        int monsterY = row * 52 +5;
+
+                        int type = 5;
                         int orient = 3;
                         int speed = 10;
                         int heart = 1;
