@@ -20,11 +20,11 @@ public class Monster extends Actor
         width = img.getWidth(null);
         if (type == Actor.MONSTER)
         {
-            height = img.getHeight(null);
+            height = img.getHeight(null) - 5;
         }
         else
         {
-            height = img.getHeight(null);
+            height = img.getHeight(null) - 5;
         }
 
     }

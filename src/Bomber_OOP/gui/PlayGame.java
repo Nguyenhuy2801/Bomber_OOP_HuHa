@@ -58,7 +58,7 @@ public class PlayGame extends JPanel implements Runnable, ActionListener
     {
         back_menu = new JButton();
         back_menu.setText("Back");
-        back_menu.setBounds(1300, 520, 100, 30);
+        back_menu.setBounds(1455, 520, 100, 30);
         back_menu.addActionListener(this);
         add(back_menu);
     }

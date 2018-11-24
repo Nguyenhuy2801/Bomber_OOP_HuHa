@@ -35,19 +35,19 @@ public class Manager
         {
             case 1:
                 mBomber = new Bomber(45, 67, Actor.BOMBER, Actor.DOWN, 5, 1, 1);
-                innit(pathLevel1);
+                innit(pathLeve1);
                 nextLevel = 0;
                 status = 0;
                 break;
             case 2:
                 mBomber.setNew(315, 270);
-                innit(pathLevel2);
+                innit(pathLeve2);
                 nextLevel = 0;
                 status = 0;
                 break;
             case 3:
-                mBomber.setNew(315, 495);
-                innit(pathLevel3);
+                mBomber.setNew(630, 260);
+                innit(pathLeve3);
                 nextLevel = 0;
                 status = 0;
                 break;
@@ -294,26 +294,26 @@ public class Manager
         Image imgInfor = new ImageIcon(getClass().getResource("/Images/background_Info.png")).getImage();
         g2d.setFont(new Font("Arial", Font.BOLD, 20));
         g2d.setColor(Color.RED);
-        g2d.drawImage(imgInfor, 1240, 0, null);
-        g2d.drawString("HEART", 1320, 100);
+        g2d.drawImage(imgInfor, 1395, 0, null);
+        g2d.drawString("HEART", 1475, 100);
         Image heart = new ImageIcon(getClass().getResource("/Images/heart_1.png")).getImage();
         if (mBomber.getHeart() == 3)
         {
-            g2d.drawImage(heart, 1315, 120, null);
-            g2d.drawImage(heart, 1340, 120, null);
-            g2d.drawImage(heart, 1365, 120, null);
+            g2d.drawImage(heart, 1470, 120, null);
+            g2d.drawImage(heart, 1495, 120, null);
+            g2d.drawImage(heart, 1520, 120, null);
         }
         if (mBomber.getHeart() == 2)
         {
-            g2d.drawImage(heart, 1325, 120, null);
-            g2d.drawImage(heart, 1360, 120, null);
+            g2d.drawImage(heart, 1480, 120, null);
+            g2d.drawImage(heart, 1515, 120, null);
         }
         if (mBomber.getHeart() == 1)
         {
-            g2d.drawImage(heart, 1340, 120, null);
+            g2d.drawImage(heart, 1495, 120, null);
         }
 
-        g2d.drawString("SCORE : " + mBomber.getScore() * 10, 1310, 200);
+        g2d.drawString("SCORE : " + mBomber.getScore() * 10, 1465, 200);
     }
 
     public void drawAllBomb(Graphics2D g2d)
@@ -381,7 +381,6 @@ public class Manager
                 Image icon;
                 for (int j = 0; j < 3000; j++)
                 {
-//                    icon = new ImageIcon(getClass().getResource("/Images/player_dead" + (j/1000%2 + 1) + ".png")).getImage();
                     icon = new ImageIcon(getClass().getResource("/Images/bomber_dead.png")).getImage();
                     mBomber.setImg(icon);
                 }
@@ -686,9 +685,9 @@ public class Manager
 
 
 
-    private String pathLevel1 = "src/Map1/Map1.txt";
-    private String pathLevel2 = "src/Map1/Map1.txt";
-    private String pathLevel3 = "src/Map1/Map1.txt";
+    private String pathLeve1 = "src/Map1/Map1.txt";
+    private String pathLeve2 = "src/Map2/Map2.txt";
+    private String pathLeve3 = "src/Map3/Map3.txt";
     private String pathShadow1 = "/Images/shawdow1.png";
     private String pathBox1 = "/Images/box1.png";
     private String pathShadow2 = "/Images/shawdow2.png";
@@ -702,11 +701,17 @@ public class Manager
 
     public void addItem(int i, int row, int type, String path)
     {
-        int itemX = i * 40;
+        int itemX = i * 45;
         int itemY = row * 52;
 
         Item item = new Item(itemX, itemY, type, path);
         this.arrItem.add(item);
+
+        Box box2 = new Box(itemX, itemY + 15, 0, pathBox2);
+        this.arrBox.add(box2);
+
+        Box shadowBox2 = new Box(itemX, itemY, 0, pathShadow2);
+        this.arrBox.add(shadowBox2);
     }
 
 
@@ -726,7 +731,7 @@ public class Manager
                     case '#':
                     {
                         //TODO:
-                        int shadowX = i * 40;
+                        int shadowX = i * 45;
                         int shadowY = row * 52;
                         int boxX = shadowX;
                         int boxY = shadowY + 15;
@@ -742,7 +747,7 @@ public class Manager
                     }
                     case '*':
                     {
-                        int shadowX = i * 40;
+                        int shadowX = i * 45;
                         int shadowY = row * 52;
                         int boxX = shadowX;
                         int boxY = shadowY + 15;
@@ -761,8 +766,8 @@ public class Manager
                     case '1':
                     {
                         //TODO:
-                        int monsterX = i * 40;
-                        int monsterY = row * 52;
+                        int monsterX = i * 45;
+                        int monsterY = row * 52 +5;
 
                         int type = 2;
                         int orient = 3;
