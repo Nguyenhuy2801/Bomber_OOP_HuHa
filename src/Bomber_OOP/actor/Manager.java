@@ -402,29 +402,30 @@ public class Manager
         {
             if (arrItem.get(i).isImpactItemVsBomber(mBomber))
             {
-                GameSound.instance.getAudio(GameSound.ITEM).play();
-                if (arrItem.get(i).getType() == Item.Item_Bomb)
-                {
-                    mBomber.setQuantityBomb(mBomber.getQuantityBomb() + 1);
-                    arrItem.remove(i);
-                    break;
+                if(arrItem.get(i).getType() != Item.Item_Door) {
+                    GameSound.instance.getAudio(GameSound.ITEM).play();
+                    if (arrItem.get(i).getType() == Item.Item_Bomb) {
+                        mBomber.setQuantityBomb(mBomber.getQuantityBomb() + 1);
+                        arrItem.remove(i);
+                        break;
+                    }
+                    if (arrItem.get(i).getType() == Item.Item_BombSize) {
+                        mBomber.setSizeBomb(mBomber.getSizeBomb() + 1);
+                        arrItem.remove(i);
+                        break;
+                    }
+                    if (arrItem.get(i).getType() == Item.Item_Shoe) {
+                        mBomber.setSpeed(mBomber.getSpeed() - 1);
+                        arrItem.remove(i);
+                        break;
+                    }
                 }
-                if (arrItem.get(i).getType() == Item.Item_BombSize)
-                {
-                    mBomber.setSizeBomb(mBomber.getSizeBomb() + 1);
-                    arrItem.remove(i);
-                    break;
-                }
-                if (arrItem.get(i).getType() == Item.Item_Shoe)
-                {
-                    mBomber.setSpeed(mBomber.getSpeed() - 1);
-                    arrItem.remove(i);
-                    break;
-                }
-                if (arrItem.get(i).getType() == Item.Item_Door)
+
+                else if (arrItem.get(i).getType() == Item.Item_Door)
                 {
                     if (arrMonster.size() == 0)
                     {
+                        GameSound.instance.getAudio(GameSound.ITEM).play();
                         System.out.println("endgame");
                         //end game there
                         if (arrMonster.size() == 0 && nextLevel == 0)
@@ -442,6 +443,7 @@ public class Manager
                             level = level + 1;
                             nextLevel++;
                             status = 2;
+                            arrItem.remove(i);
                         }
                     }
 
@@ -679,12 +681,6 @@ public class Manager
         this.level = 1;
     }
 
-
-
-
-
-
-
     private String pathLeve1 = "src/Map1/Map1.txt";
     private String pathLeve2 = "src/Map2/Map2.txt";
     private String pathLeve3 = "src/Map3/Map3.txt";
@@ -779,7 +775,7 @@ public class Manager
                         this.arrMonster.add(monster2);
                         break;
                     }
-                    case '5':
+                    case '2':
                     {
                         //TODO:
                         int monsterX = i * 45;
@@ -795,6 +791,23 @@ public class Manager
                         this.arrMonster.add(monster2);
                         break;
                     }
+                    case '3':
+                    {
+                        //TODO:
+                        int monsterX = i * 45;
+                        int monsterY = row * 52 +5;
+
+                        int type = 3;
+                        int orient = 3;
+                        int speed = 10;
+                        int heart = 1;
+
+                        Monster monster2 = new Monster(monsterX, monsterY, type, orient, speed, heart, pathMonster2);
+
+                        this.arrMonster.add(monster2);
+                        break;
+                    }
+
                     case 'f':
                     {
                         //TODO:

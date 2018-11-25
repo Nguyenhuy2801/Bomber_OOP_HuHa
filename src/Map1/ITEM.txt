@@ -1,2 +1,0 @@
-45:355:2:/Images/item_bombsize.png
-100:100:4:/Images/item_door.png

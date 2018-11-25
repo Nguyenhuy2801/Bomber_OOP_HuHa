@@ -21,7 +21,7 @@ public class HightScorePanel extends JPanel implements ActionListener
     public HightScorePanel(MyContainer mContainer)
     {
         this.mContainer = mContainer;
-        setBackground(Color.YELLOW);
+        setBackground(Color.BLUE);
         setLayout(null);
         initCompts();
     }
@@ -39,7 +39,7 @@ public class HightScorePanel extends JPanel implements ActionListener
 
         Button_OK = new JButton();
         Button_OK.setText("OK");
-        Button_OK.setBounds(400, 520, 100, 50);
+        Button_OK.setBounds(90, 580, 200, 60);
         Button_OK.addActionListener(this);
         add(Button_OK);
     }
@@ -64,14 +64,16 @@ public class HightScorePanel extends JPanel implements ActionListener
         g2d.setStroke(new java.awt.BasicStroke(2));
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2d.setFont(new Font("Arial", Font.BOLD, 30));
-        g2d.setColor(Color.YELLOW);
-        int y = 100;
+
+        int y = 180;
         for (int i = 0; i < 10; i++)
         {
-            g2d.drawString("" + (i + 1), 270, y);
-            g2d.drawString("" + arrHightScore.get(i).getName(), 380, y);
-            g2d.drawString("" + arrHightScore.get(i).getScore(), 600, y);
-            y = y + 40;
+            if(i % 2 == 0) g2d.setColor(Color.YELLOW);
+            else g2d.setColor(Color.WHITE);
+            g2d.drawString("" + (i + 1), 570, y);
+            g2d.drawString("" + arrHightScore.get(i).getName(), 700, y);
+            g2d.drawString("" + arrHightScore.get(i).getScore(), 950, y);
+            y = y + 50;
         }
 
     }
